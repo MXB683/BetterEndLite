@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better_end_lite:enderium_ore"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "better_end_lite:enderium_clump"
+  }
+}

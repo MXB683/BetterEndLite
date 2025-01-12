@@ -21,11 +21,16 @@ public class ModBlocks {
 
 	public static final RegistryObject<Block> ENDERIUM_ORE = registerBlock("enderium_ore",
 			() -> new Block(BlockBehaviour.Properties.of()
-			.strength(5.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+					.strength(5.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 	public static final RegistryObject<Block> ENDERIUM_CLUMP_BLOCK = registerBlock("enderium_clump_block",
 			() -> new Block(BlockBehaviour.Properties.of()
-			.strength(4.5F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+					.strength(4.5F, 5.0F).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+
+	public static final RegistryObject<Block> ENDERIUM_SPIKES = registerBlock("enderium_spikes",
+			() -> new EnderiumSpikesBlock(BlockBehaviour.Properties.of()
+					.strength(1.0f, 0.5f).requiresCorrectToolForDrops()
+					.sound(SoundType.STONE).noCollission().noOcclusion().randomTicks()));
 
 
 	private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

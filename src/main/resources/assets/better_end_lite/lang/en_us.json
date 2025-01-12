@@ -3,7 +3,9 @@
 
 	"item.better_end_lite.enderium_clump": "Enderium Clump",
 	"item.better_end_lite.enderium_shard": "Enderium Shard",
+	"item.better_end_lite.ancient_relic": "Ancient Relic",
 
 	"block.better_end_lite.enderium_ore": "Enderium Clump Ore",
-	"block.better_end_lite.enderium_clump_block": "Block of Enderium Clump"
+	"block.better_end_lite.enderium_clump_block": "Block of Enderium Clump",
+	"block.better_end_lite.enderium_spikes": "Enderium Spikes"
 }

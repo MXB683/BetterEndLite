@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "better_end_lite:enderium_clump_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "better_end_lite:blocks/enderium_clump_block"
+}

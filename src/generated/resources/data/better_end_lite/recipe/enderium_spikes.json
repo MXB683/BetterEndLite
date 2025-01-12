@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "better_end_lite:enderium_shard"
+    },
+    "_": {
+      "item": "better_end_lite:enderium_clump_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "#_#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "better_end_lite:enderium_spikes"
+  }
+}

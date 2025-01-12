@@ -21,8 +21,11 @@ public class ModCreativeModeTabs {
 					.displayItems((parameters, output) -> {
 						output.accept(ModItems.ENDERIUM_CLUMP.get());
 						output.accept(ModItems.ENDERIUM_SHARD.get());
+						//output.accept(ModItems.ANCIENT_RELIC.get());
+
 						output.accept(ModBlocks.ENDERIUM_ORE.get());
 						output.accept(ModBlocks.ENDERIUM_CLUMP_BLOCK.get());
+						output.accept(ModBlocks.ENDERIUM_SPIKES.get());
 					})
 					.build());
 

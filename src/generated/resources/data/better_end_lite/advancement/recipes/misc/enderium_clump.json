@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enderium_clump_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "better_end_lite:enderium_clump_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "better_end_lite:enderium_clump"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_enderium_clump_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "better_end_lite:enderium_clump"
+    ]
+  }
+}

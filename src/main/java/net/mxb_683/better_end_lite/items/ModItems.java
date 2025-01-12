@@ -15,6 +15,8 @@ public class ModItems {
 			() -> new Item(new Item.Properties()));
 	public static final RegistryObject<Item> ENDERIUM_SHARD = ITEMS.register("enderium_shard",
 			() -> new Item(new Item.Properties()));
+	public static final RegistryObject<Item> ANCIENT_RELIC = ITEMS.register("ancient_relic",
+			() -> new Item(new Item.Properties()));
 
 
 	public static void register(IEventBus eventBus) {

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "better_end_lite:block/enderium_spikes",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "better_end_lite:block/enderium_spikes",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "better_end_lite:block/enderium_spikes",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "better_end_lite:block/enderium_spikes",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "better_end_lite:block/enderium_spikes"
+    },
+    "facing=west": {
+      "model": "better_end_lite:block/enderium_spikes",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
