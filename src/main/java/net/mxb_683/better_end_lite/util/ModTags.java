@@ -10,6 +10,8 @@ import net.mxb_683.better_end_lite.BetterEndLiteMod;
 
 public class ModTags {
 	public static class Blocks {
+		public static final TagKey<Block> END_ORE_REPLACEABLES = createTag("end_ore_replaceables");
+
 		private static TagKey<Block> createTag(String name) {
 			return BlockTags.create(ResourceLocation.fromNamespaceAndPath(BetterEndLiteMod.MOD_ID, name));
 		}

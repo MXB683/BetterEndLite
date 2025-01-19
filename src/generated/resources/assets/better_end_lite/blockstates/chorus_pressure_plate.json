@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "better_end_lite:block/chorus_pressure_plate"
+    },
+    "powered=true": {
+      "model": "better_end_lite:block/chorus_pressure_plate_down"
+    }
+  }
+}

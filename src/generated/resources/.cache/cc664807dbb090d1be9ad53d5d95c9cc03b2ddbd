@@ -1,3 +1,8 @@
-// 1.21.1	2025-01-12T10:31:36.2317327	Tags for minecraft:block mod id better_end_lite
-05eefb447127e8f32a3ff1fe350e01f558e22225 data/minecraft/tags/block/mineable/pickaxe.json
-05eefb447127e8f32a3ff1fe350e01f558e22225 data/minecraft/tags/block/needs_diamond_tool.json
+// 1.21.1	2025-01-18T19:57:25.1891021	Tags for minecraft:block mod id better_end_lite
+9994f212884e8264af96eaba34aa7e89696d8994 data/better_end_lite/tags/block/end_ore_replaceables.json
+7f6112a06eb40bc7ac89604a209884a5176db04d data/minecraft/tags/block/fences.json
+e48de92569e4d7f43ef9a183b8ea1a7eba4ba5c4 data/minecraft/tags/block/fence_gates.json
+f60da9af166469e0ef387d048f1103001bc02e81 data/minecraft/tags/block/logs_that_burn.json
+610e4c4df95b182920da5f1ab50f710e02af8e37 data/minecraft/tags/block/mineable/pickaxe.json
+610e4c4df95b182920da5f1ab50f710e02af8e37 data/minecraft/tags/block/needs_diamond_tool.json
+05ea790e2280b543649be3d46a18ae78f8957289 data/minecraft/tags/block/walls.json

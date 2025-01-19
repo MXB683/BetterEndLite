@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "better_end_lite:block/chorus_planks",
+    "side": "better_end_lite:block/chorus_planks",
+    "top": "better_end_lite:block/chorus_planks"
+  }
+}

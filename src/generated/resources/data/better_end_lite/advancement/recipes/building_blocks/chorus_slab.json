@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chorus_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "better_end_lite:chorus_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "better_end_lite:chorus_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chorus_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "better_end_lite:chorus_slab"
+    ]
+  }
+}

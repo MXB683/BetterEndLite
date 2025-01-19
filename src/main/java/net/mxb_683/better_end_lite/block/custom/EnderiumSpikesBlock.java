@@ -1,4 +1,4 @@
-package net.mxb_683.better_end_lite.block;
+package net.mxb_683.better_end_lite.block.custom;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
@@ -46,8 +46,10 @@ public class EnderiumSpikesBlock extends DirectionalBlock {
 		if (!pEntity.isSteppingCarefully() && pEntity instanceof LivingEntity) {
 			pEntity.hurt(pLevel.damageSources().cramming(), 4.0F);
 			if (!pLevel.isClientSide()) {
-				pLevel.setBlock(pPos, pState.setValue(POWER,
-						(int) (14 - ((LivingEntity) pEntity).getHealth() / ((LivingEntity) pEntity).getMaxHealth() * 15)), 3);
+				int power = (int) (14 - ((LivingEntity) pEntity).getHealth() / ((LivingEntity) pEntity).getMaxHealth() * 15);
+				if (power < 0) power = 0;
+				if (power > 15) power = 15;
+				pLevel.setBlock(pPos, pState.setValue(POWER, power), 3);
 				pLevel.scheduleTick(pPos, this, 10);
 			}
 		}

@@ -20,21 +20,41 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 	@Override
 	protected void buildRecipes(RecipeOutput pRecipeOutput) {
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ENDERIUM_BRICK.get())
+				.pattern("##")
+				.pattern("##")
+				.define('#', ModItems.ENDERIUM_SHARD.get())
+				.unlockedBy(getHasName(ModItems.ENDERIUM_SHARD.get()), has(ModItems.ENDERIUM_SHARD.get())).save(pRecipeOutput);
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDERIUM_BRICKS.get())
+				.pattern("##")
+				.pattern("##")
+				.define('#', ModItems.ENDERIUM_BRICK.get())
+				.unlockedBy(getHasName(ModItems.ENDERIUM_BRICK.get()), has(ModItems.ENDERIUM_BRICK.get())).save(pRecipeOutput);
+
+		stairBuilder(ModBlocks.ENDERIUM_BRICK_STAIRS.get(), Ingredient.of(ModBlocks.ENDERIUM_BRICKS.get())).group(
+				"enderium_brick_stairs").unlockedBy(getHasName(ModBlocks.ENDERIUM_BRICKS.get()),
+				has(ModBlocks.ENDERIUM_BRICKS.get())).save(pRecipeOutput);
+		slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDERIUM_BRICK_SLAB.get(), ModBlocks.ENDERIUM_BRICKS.get());
+		wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDERIUM_BRICK_WALL.get(), ModBlocks.ENDERIUM_BRICKS.get());
+		chiseled(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_ENDERIUM_BRICKS.get(),
+				ModBlocks.ENDERIUM_BRICK_SLAB.get());
+
 		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENDERIUM_CLUMP_BLOCK.get())
 				.pattern("###")
 				.pattern("###")
 				.pattern("###")
 				.define('#', ModItems.ENDERIUM_CLUMP.get())
 				.unlockedBy(getHasName(ModItems.ENDERIUM_CLUMP.get()), has(ModItems.ENDERIUM_CLUMP.get())).save(pRecipeOutput);
-
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ENDERIUM_CLUMP.get(), 9)
-				.requires(ModBlocks.ENDERIUM_ORE.get())
+				.requires(ModBlocks.ENDERIUM_CLUMP_BLOCK.get())
 				.unlockedBy(getHasName(ModBlocks.ENDERIUM_CLUMP_BLOCK.get()), has(ModBlocks.ENDERIUM_CLUMP_BLOCK.get())).save(pRecipeOutput);
+
 
 		oreSmelting(pRecipeOutput, List.of(ModItems.ENDERIUM_CLUMP.get(), ModBlocks.ENDERIUM_CLUMP_BLOCK.get()),
 				RecipeCategory.MISC, ModItems.ENDERIUM_SHARD.get(), 50f, 500, "enderium_shard");
 		oreBlasting(pRecipeOutput, List.of(ModItems.ENDERIUM_CLUMP.get(), ModBlocks.ENDERIUM_CLUMP_BLOCK.get()),
 				RecipeCategory.MISC, ModItems.ENDERIUM_SHARD.get(), 100f, 200, "enderium_shard");
+
 
 		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENDERIUM_SPIKES.get())
 				.pattern("###")
@@ -42,6 +62,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 				.define('#', ModItems.ENDERIUM_SHARD.get())
 				.define('_', ModBlocks.ENDERIUM_CLUMP_BLOCK.get())
 				.unlockedBy(getHasName(ModItems.ENDERIUM_SHARD.get()), has(ModItems.ENDERIUM_SHARD.get())).save(pRecipeOutput);
+
+		stairBuilder(ModBlocks.CHORUS_STAIRS.get(), Ingredient.of(ModBlocks.CHORUS_PLANKS.get())).group("chorus_stairs")
+				.unlockedBy(getHasName(ModBlocks.CHORUS_PLANKS.get()), has(ModBlocks.CHORUS_PLANKS.get())).save(pRecipeOutput);
+		slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHORUS_SLAB.get(), ModBlocks.CHORUS_PLANKS.get());
+		fenceBuilder(ModBlocks.CHORUS_FENCE.get(), Ingredient.of(ModBlocks.CHORUS_PLANKS.get())).group("chorus_fence")
+				.unlockedBy(getHasName(ModBlocks.CHORUS_PLANKS.get()), has(ModBlocks.CHORUS_PLANKS.get())).save(pRecipeOutput);
+		fenceGateBuilder(ModBlocks.CHORUS_FENCE_GATE.get(), Ingredient.of(ModBlocks.CHORUS_PLANKS.get())).group("chorus_fence_gate")
+				.unlockedBy(getHasName(ModBlocks.CHORUS_PLANKS.get()), has(ModBlocks.CHORUS_PLANKS.get())).save(pRecipeOutput);
+		buttonBuilder(ModBlocks.CHORUS_BUTTON.get(), Ingredient.of(ModBlocks.CHORUS_PLANKS.get())).group("chorus_button")
+				.unlockedBy(getHasName(ModBlocks.CHORUS_PLANKS.get()), has(ModBlocks.CHORUS_PLANKS.get())).save(pRecipeOutput);
+		pressurePlate(pRecipeOutput, ModBlocks.CHORUS_PRESSURE_PLATE.get(), ModBlocks.CHORUS_PLANKS.get());
+		trapdoorBuilder(ModBlocks.CHORUS_TRAPDOOR.get(), Ingredient.of(ModBlocks.CHORUS_PLANKS.get())).group("chorus_trapdoor")
+				.unlockedBy(getHasName(ModBlocks.CHORUS_PLANKS.get()), has(ModBlocks.CHORUS_PLANKS.get())).save(pRecipeOutput);
+		doorBuilder(ModBlocks.CHORUS_DOOR.get(), Ingredient.of(ModBlocks.CHORUS_PLANKS.get())).group("chorus_door");
 	}
 
 
@@ -58,12 +92,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 	}
 
 	protected static <T extends AbstractCookingRecipe> void oreCooking(RecipeOutput recipeOutput,
-																																		 RecipeSerializer<T> pCookingSerializer,
-																																		 AbstractCookingRecipe.Factory<T> factory,
-																																		 List<ItemLike> pIngredients,
-																																		 RecipeCategory pCategory, ItemLike pResult,
-																																		 float pExperience, int pCookingTime,
-																																		 String pGroup, String pRecipeName) {
+																																		 RecipeSerializer<T> pCookingSerializer, AbstractCookingRecipe.Factory<T> factory, List<ItemLike> pIngredients,
+																																		 RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup,
+																																		 String pRecipeName) {
 		for (ItemLike itemlike : pIngredients) {
 			SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
 					.save(recipeOutput, BetterEndLiteMod.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));

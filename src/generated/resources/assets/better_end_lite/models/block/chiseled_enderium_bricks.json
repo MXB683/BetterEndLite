@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "better_end_lite:block/chiseled_enderium_bricks"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "better_end_lite:block/chorus_planks"
+  }
+}

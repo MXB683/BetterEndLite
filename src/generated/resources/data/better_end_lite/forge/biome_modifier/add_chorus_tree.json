@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:end_barrens",
+    "minecraft:end_midlands"
+  ],
+  "features": "better_end_lite:chrous_tree_placed",
+  "step": "vegetal_decoration"
+}

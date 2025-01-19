@@ -2,6 +2,11 @@
   "values": [
     "better_end_lite:enderium_ore",
     "better_end_lite:enderium_clump_block",
-    "better_end_lite:enderium_spikes"
+    "better_end_lite:enderium_spikes",
+    "better_end_lite:enderium_bricks",
+    "better_end_lite:chiseled_enderium_bricks",
+    "better_end_lite:enderium_brick_wall",
+    "better_end_lite:enderium_brick_slab",
+    "better_end_lite:enderium_brick_stairs"
   ]
 }

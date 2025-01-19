@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chorus_stairs",
+  "key": {
+    "#": {
+      "item": "better_end_lite:chorus_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "better_end_lite:chorus_stairs"
+  }
+}

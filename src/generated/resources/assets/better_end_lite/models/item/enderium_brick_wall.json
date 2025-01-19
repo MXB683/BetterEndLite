@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "better_end_lite:block/enderium_bricks"
+  }
+}

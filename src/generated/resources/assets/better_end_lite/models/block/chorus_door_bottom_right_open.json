@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "better_end_lite:block/chorus_door_bottom",
+    "top": "better_end_lite:block/chorus_door_top"
+  }
+}

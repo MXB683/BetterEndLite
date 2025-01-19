@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "better_end_lite:block/chorus_slab"
+    },
+    "type=double": {
+      "model": "better_end_lite:block/chorus_planks"
+    },
+    "type=top": {
+      "model": "better_end_lite:block/chorus_slab_top"
+    }
+  }
+}

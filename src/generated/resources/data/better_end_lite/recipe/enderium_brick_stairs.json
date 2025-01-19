@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "enderium_brick_stairs",
+  "key": {
+    "#": {
+      "item": "better_end_lite:enderium_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "better_end_lite:enderium_brick_stairs"
+  }
+}

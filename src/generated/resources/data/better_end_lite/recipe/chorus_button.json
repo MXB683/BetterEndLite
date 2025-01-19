@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "chorus_button",
+  "ingredients": [
+    {
+      "item": "better_end_lite:chorus_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "better_end_lite:chorus_button"
+  }
+}

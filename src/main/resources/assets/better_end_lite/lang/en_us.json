@@ -1,11 +1,36 @@
 {
-	"creativetab.better_end_lite.better_end_lite_items_tab": "Better End Lite Items",
+	"creativetab.better_end_lite.better_end_lite_items_tab": "Better End Lite",
 
 	"item.better_end_lite.enderium_clump": "Enderium Clump",
 	"item.better_end_lite.enderium_shard": "Enderium Shard",
+	"item.better_end_lite.enderium_brick": "Enderium Brick",
 	"item.better_end_lite.ancient_relic": "Ancient Relic",
 
 	"block.better_end_lite.enderium_ore": "Enderium Clump Ore",
 	"block.better_end_lite.enderium_clump_block": "Block of Enderium Clump",
-	"block.better_end_lite.enderium_spikes": "Enderium Spikes"
+	"block.better_end_lite.enderium_spikes": "Enderium Spikes",
+
+	"block.better_end_lite.enderium_bricks": "Enderium Bricks",
+	"block.better_end_lite.enderium_brick_stairs": "Enderium Brick Stairs",
+	"block.better_end_lite.enderium_brick_slab": "Enderium Brick Slab",
+	"block.better_end_lite.enderium_brick_wall": "Enderium Brick Wall",
+	"block.better_end_lite.chiseled_enderium_bricks": "Chiseled Enderium Bricks",
+
+	"block.better_end_lite.chorus_log": "Chorus Log",
+	"block.better_end_lite.chorus_wood": "Chorus Wood",
+	"block.better_end_lite.stripped_chorus_log": "Stripped Chorus Log",
+	"block.better_end_lite.stripped_chorus_wood": "Stripped Chorus Wood",
+
+	"block.better_end_lite.chorus_planks": "Chorus Planks",
+	"block.better_end_lite.chorus_leaves": "Chorus Leaves",
+	"block.better_end_lite.chorus_sapling": "Chorus Sapling",
+
+	"block.better_end_lite.chorus_stairs": "Chorus Stairs",
+	"block.better_end_lite.chorus_slab": "Chorus Slab",
+	"block.better_end_lite.chorus_button": "Chorus Button",
+	"block.better_end_lite.chorus_pressure_plate": "Chorus Pressure Plate",
+	"block.better_end_lite.chorus_door": "Chorus Door",
+	"block.better_end_lite.chorus_trapdoor": "Chorus Trapdoor",
+	"block.better_end_lite.chorus_fence": "Chorus Fence",
+	"block.better_end_lite.chorus_fence_gate": "Chorus Fence Gate"
 }

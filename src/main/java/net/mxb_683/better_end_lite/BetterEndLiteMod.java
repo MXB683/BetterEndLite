@@ -1,7 +1,6 @@
 package net.mxb_683.better_end_lite;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -45,18 +44,7 @@ public class BetterEndLiteMod {
 	}
 
 	private void addCreative(BuildCreativeModeTabContentsEvent event) {
-		if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-			event.accept(ModItems.ENDERIUM_CLUMP);
-			event.accept(ModItems.ENDERIUM_SHARD);
-		}
 
-		if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			event.accept(ModBlocks.ENDERIUM_ORE);
-		}
-
-		if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-			event.accept(ModBlocks.ENDERIUM_CLUMP_BLOCK);
-		}
 	}
 
 	@SubscribeEvent
