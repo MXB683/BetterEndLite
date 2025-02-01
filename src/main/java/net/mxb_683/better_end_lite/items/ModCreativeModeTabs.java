@@ -19,9 +19,16 @@ public class ModCreativeModeTabs {
 					.icon(() -> new ItemStack(ModItems.ENDERIUM_CLUMP.get()))
 					.title(Component.translatable("creativetab.better_end_lite.better_end_lite_items_tab"))
 					.displayItems((parameters, output) -> {
+						output.accept(ModItems.ENDERIUM_SWORD.get());
+						output.accept(ModItems.ENDERIUM_PICKAXE.get());
+						output.accept(ModItems.ENDERIUM_SHOVEL.get());
+						output.accept(ModItems.ENDERIUM_AXE.get());
+						output.accept(ModItems.ENDERIUM_HOE.get());
+						
 						output.accept(ModItems.ENDERIUM_CLUMP.get());
 						output.accept(ModItems.ENDERIUM_SHARD.get());
 						output.accept(ModItems.ENDERIUM_BRICK.get());
+
 						output.accept(ModBlocks.ENDERIUM_ORE.get());
 						output.accept(ModBlocks.ENDERIUM_CLUMP_BLOCK.get());
 						output.accept(ModBlocks.ENDERIUM_SPIKES.get());

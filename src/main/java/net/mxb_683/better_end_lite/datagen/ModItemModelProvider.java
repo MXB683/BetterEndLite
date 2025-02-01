@@ -2,6 +2,7 @@ package net.mxb_683.better_end_lite.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -29,6 +30,18 @@ public class ModItemModelProvider extends ItemModelProvider {
 		simpleBlockItem(ModBlocks.CHORUS_DOOR);
 
 		saplingItem(ModBlocks.CHORUS_SAPLING);
+
+		handheldItem(ModItems.ENDERIUM_SWORD);
+		handheldItem(ModItems.ENDERIUM_PICKAXE);
+		handheldItem(ModItems.ENDERIUM_SHOVEL);
+		handheldItem(ModItems.ENDERIUM_AXE);
+		handheldItem(ModItems.ENDERIUM_HOE);
+	}
+
+	private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+		return withExistingParent(item.getId().getPath(),
+				ResourceLocation.parse("item/handheld")).texture("layer0",
+				ResourceLocation.fromNamespaceAndPath(BetterEndLiteMod.MOD_ID, "item/" + item.getId().getPath()));
 	}
 
 	private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

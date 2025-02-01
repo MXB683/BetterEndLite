@@ -1,9 +1,14 @@
-// 1.21.1	2025-01-18T19:57:25.1900987	Item Models: better_end_lite
+// 1.21.1	2025-02-01T19:24:40.1572622	Item Models: better_end_lite
 11e9da2a404b3e204a6e2af3fc8bed2875cabad1 assets/better_end_lite/models/item/chorus_button.json
 0baa97feb50795330860a4b550e08b720e689ee5 assets/better_end_lite/models/item/chorus_door.json
 f4afa2304f0bd8d877953cdb7fa9b693acf44080 assets/better_end_lite/models/item/chorus_fence.json
 81efa58a76fe5b9c744b32ed696d39a949e16576 assets/better_end_lite/models/item/chorus_sapling.json
+754e3ecfd2a9dc170254d1b89b071db048689e53 assets/better_end_lite/models/item/enderium_axe.json
 e7f463c7db32ce59b8c82a3a2ca2cf6a85151d86 assets/better_end_lite/models/item/enderium_brick.json
 4373b189dbd633bb8f3de34714ab7ffc2e97e465 assets/better_end_lite/models/item/enderium_brick_wall.json
 f70fdadf8754eae1e359b74f7b0a7fd63b1bcd49 assets/better_end_lite/models/item/enderium_clump.json
+5c35d1c826a15cae7d9f29c4cd3a1ac8986751e5 assets/better_end_lite/models/item/enderium_hoe.json
+7277fde2fa16fe14fcc2fe15f80008c02514a1c0 assets/better_end_lite/models/item/enderium_pickaxe.json
 ef99627d93f9c08166d16fc164cba30ebca0c994 assets/better_end_lite/models/item/enderium_shard.json
+876053813933994ea472448c473052fe4eeb2894 assets/better_end_lite/models/item/enderium_shovel.json
+4789629580982be85d286b363bd341882917df73 assets/better_end_lite/models/item/enderium_sword.json

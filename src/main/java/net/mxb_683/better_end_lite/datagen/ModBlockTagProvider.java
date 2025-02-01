@@ -31,15 +31,47 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 				.add(ModBlocks.ENDERIUM_BRICK_SLAB.get())
 				.add(ModBlocks.ENDERIUM_BRICK_STAIRS.get());
 
+		tag(BlockTags.MINEABLE_WITH_AXE)
+				.add(ModBlocks.CHORUS_LOG.get())
+				.add(ModBlocks.CHORUS_WOOD.get())
+				.add(ModBlocks.STRIPPED_CHORUS_LOG.get())
+				.add(ModBlocks.STRIPPED_CHORUS_WOOD.get())
+				.add(ModBlocks.CHORUS_PLANKS.get())
+				.add(ModBlocks.CHORUS_SLAB.get())
+				.add(ModBlocks.CHORUS_STAIRS.get())
+				.add(ModBlocks.CHORUS_FENCE.get())
+				.add(ModBlocks.CHORUS_FENCE_GATE.get())
+				.add(ModBlocks.CHORUS_BUTTON.get())
+				.add(ModBlocks.CHORUS_PRESSURE_PLATE.get())
+				.add(ModBlocks.CHORUS_TRAPDOOR.get())
+				.add(ModBlocks.CHORUS_DOOR.get());
+
 		tag(BlockTags.NEEDS_DIAMOND_TOOL)
-				.add(ModBlocks.ENDERIUM_ORE.get())
+				.add(ModBlocks.ENDERIUM_ORE.get());
+
+		tag(ModTags.Blocks.NEEDS_ENDERIUM_TOOL)
+				.addTag(BlockTags.NEEDS_DIAMOND_TOOL)
 				.add(ModBlocks.ENDERIUM_CLUMP_BLOCK.get())
 				.add(ModBlocks.ENDERIUM_SPIKES.get())
 				.add(ModBlocks.ENDERIUM_BRICKS.get())
 				.add(ModBlocks.CHISELED_ENDERIUM_BRICKS.get())
 				.add(ModBlocks.ENDERIUM_BRICK_WALL.get())
 				.add(ModBlocks.ENDERIUM_BRICK_SLAB.get())
-				.add(ModBlocks.ENDERIUM_BRICK_STAIRS.get());
+				.add(ModBlocks.ENDERIUM_BRICK_STAIRS.get())
+
+				.add(ModBlocks.CHORUS_LOG.get())
+				.add(ModBlocks.CHORUS_WOOD.get())
+				.add(ModBlocks.STRIPPED_CHORUS_LOG.get())
+				.add(ModBlocks.STRIPPED_CHORUS_WOOD.get())
+				.add(ModBlocks.CHORUS_PLANKS.get())
+				.add(ModBlocks.CHORUS_SLAB.get())
+				.add(ModBlocks.CHORUS_STAIRS.get())
+				.add(ModBlocks.CHORUS_FENCE.get())
+				.add(ModBlocks.CHORUS_FENCE_GATE.get())
+				.add(ModBlocks.CHORUS_BUTTON.get())
+				.add(ModBlocks.CHORUS_PRESSURE_PLATE.get())
+				.add(ModBlocks.CHORUS_TRAPDOOR.get())
+				.add(ModBlocks.CHORUS_DOOR.get());
 
 		tag(BlockTags.WALLS).add(ModBlocks.ENDERIUM_BRICK_WALL.get());
 		tag(BlockTags.FENCES).add(ModBlocks.CHORUS_FENCE.get());
@@ -48,6 +80,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 		tag(ModTags.Blocks.END_ORE_REPLACEABLES).add(Blocks.END_STONE);
 
 		tag(BlockTags.LOGS_THAT_BURN)
+				.add(ModBlocks.CHORUS_LOG.get())
+				.add(ModBlocks.CHORUS_WOOD.get())
+				.add(ModBlocks.STRIPPED_CHORUS_LOG.get())
+				.add(ModBlocks.STRIPPED_CHORUS_WOOD.get());
+
+		tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+				.addTag(ModTags.Blocks.NEEDS_ENDERIUM_TOOL);
+
+		tag(ModTags.Blocks.CHORUS_LOGS)
 				.add(ModBlocks.CHORUS_LOG.get())
 				.add(ModBlocks.CHORUS_WOOD.get())
 				.add(ModBlocks.STRIPPED_CHORUS_LOG.get())

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
-  "group": "chorus_trapdoor",
+  "group": "wooden_trapdoor",
   "key": {
     "#": {
       "item": "better_end_lite:chorus_planks"

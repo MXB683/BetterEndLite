@@ -1,7 +1,7 @@
-// 1.21.1	2025-01-18T17:02:19.339525	Registries
+// 1.21.1	2025-01-20T21:09:02.3644288	Registries
 20671577c547c6bd844cac2b499859ad928fba3e data/better_end_lite/forge/biome_modifier/add_chorus_tree.json
 279d10382607bdb3981ebac1654be39b8b6a0813 data/better_end_lite/forge/biome_modifier/add_enderium_ore.json
 964bb7ebf1a61fc6e4190ae2401cf4282f80b7d3 data/better_end_lite/worldgen/configured_feature/chorus_tree.json
 8d0d22062aaba59bb50bc913873f9dc8ecc5039a data/better_end_lite/worldgen/configured_feature/enderium_ore.json
 59757bbcdcbb9a99cd7eec0a3f87ace8ad06a63d data/better_end_lite/worldgen/placed_feature/chrous_tree_placed.json
-8efb1b29fef1f9e1d450dad8735e51c154f74900 data/better_end_lite/worldgen/placed_feature/enderium_ore_placed.json
+e7505ce66a9dcb5b05ce5c73d2146828c2b47123 data/better_end_lite/worldgen/placed_feature/enderium_ore_placed.json

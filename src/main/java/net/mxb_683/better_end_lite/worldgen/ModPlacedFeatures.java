@@ -26,7 +26,7 @@ public class ModPlacedFeatures {
 
 		register(context, ENDERIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDERIUM_ORE_KEY),
 				ModOrePlacement.commonOrePlacement(10,
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(48))));
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(48), VerticalAnchor.absolute(72))));
 
 		register(context, CHORUS_TREE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHORUS_TREE_KEY),
 				VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),

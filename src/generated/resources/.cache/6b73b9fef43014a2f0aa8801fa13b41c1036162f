@@ -1,3 +1,9 @@
-// 1.21.1	2025-01-17T20:35:16.6461294	Tags for minecraft:item mod id better_end_lite
+// 1.21.1	2025-02-01T20:12:10.6687196	Tags for minecraft:item mod id better_end_lite
+f60da9af166469e0ef387d048f1103001bc02e81 data/better_end_lite/tags/item/chorus_logs.json
+6dd045bf5a662ec40ec64d6a9210b567f37dba7d data/minecraft/tags/item/axes.json
+f554e66b70ab13c5c0f97d475ffdecced4de5522 data/minecraft/tags/item/hoes.json
 f60da9af166469e0ef387d048f1103001bc02e81 data/minecraft/tags/item/logs_that_burn.json
+5c9c52f62cf5e410d10a77263f59b0cac4b7b907 data/minecraft/tags/item/pickaxes.json
 65da9ba49ab8b014051f7d58de4fcabbc794b6cd data/minecraft/tags/item/planks.json
+ad54370abe6a719845924e4f12e3abaaf2405be1 data/minecraft/tags/item/shovels.json
+9ca4a335ce41211fd17a418656dd4f5f8cf5d35f data/minecraft/tags/item/swords.json

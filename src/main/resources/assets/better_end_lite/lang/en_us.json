@@ -32,5 +32,11 @@
 	"block.better_end_lite.chorus_door": "Chorus Door",
 	"block.better_end_lite.chorus_trapdoor": "Chorus Trapdoor",
 	"block.better_end_lite.chorus_fence": "Chorus Fence",
-	"block.better_end_lite.chorus_fence_gate": "Chorus Fence Gate"
+	"block.better_end_lite.chorus_fence_gate": "Chorus Fence Gate",
+
+	"item.better_end_lite.enderium_sword": "Enderium Sword",
+	"item.better_end_lite.enderium_pickaxe": "Enderium Pickaxe",
+	"item.better_end_lite.enderium_shovel": "Enderium Shovel",
+	"item.better_end_lite.enderium_axe": "Enderium Axe",
+	"item.better_end_lite.enderium_hoe": "Enderium Hoe"
 }
