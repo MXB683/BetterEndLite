@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "better_end_lite:ender_cleric",
+      "required": false
+    }
+  ]
+}

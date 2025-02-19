@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:obsidian"
+    },
+    "$": {
+      "item": "better_end_lite:enderium_clump_block"
+    },
+    "+": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "$#$",
+    "#+#",
+    "$#$"
+  ],
+  "result": {
+    "count": 1,
+    "id": "better_end_lite:enderium_enchanter"
+  }
+}

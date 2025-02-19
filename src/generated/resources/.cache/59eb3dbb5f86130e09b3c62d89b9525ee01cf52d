@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-19T11:51:18.7836468	Loot Tables
+// 1.21.1	2025-02-17T21:49:59.1309943	Loot Tables
 a87be04c292be90ff54e2fa979e550043f6fdd3d data/better_end_lite/loot_table/blocks/chiseled_enderium_bricks.json
 26cc692f54f3c0a733b2c0aeafa5748ac4de8621 data/better_end_lite/loot_table/blocks/chorus_button.json
 b392b38119157bbdc21d9278788fd33ee1776458 data/better_end_lite/loot_table/blocks/chorus_door.json
@@ -18,6 +18,7 @@ fde60184c6564422169d323b2cb484c065676385 data/better_end_lite/loot_table/blocks/
 dde85401822d92c448c5b22f0d4ec6a4805b40e3 data/better_end_lite/loot_table/blocks/enderium_brick_stairs.json
 7c60f2b170f3d84a9d9dea9588ce5d8ef7092b6d data/better_end_lite/loot_table/blocks/enderium_brick_wall.json
 74b2c541c346107ae1b848bf41451a10619be76d data/better_end_lite/loot_table/blocks/enderium_clump_block.json
+231d8cc6bfa85b48bda2d37d5e0396c248144b7e data/better_end_lite/loot_table/blocks/enderium_enchanter.json
 983cbb2dc5f9398e0613f1af83c0eb79ece65a64 data/better_end_lite/loot_table/blocks/enderium_ore.json
 118b3f7e84791bd027fd11b3d62541f503c7b0c9 data/better_end_lite/loot_table/blocks/enderium_spikes.json
 dbe7ac48fc5bfaf88a1c2156f67354b36bdda4a6 data/better_end_lite/loot_table/blocks/stripped_chorus_log.json

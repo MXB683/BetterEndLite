@@ -7,6 +7,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.mxb_683.better_end_lite.BetterEndLiteMod;
 import net.mxb_683.better_end_lite.block.ModBlocks;
@@ -127,6 +128,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 				.define('|', Items.STICK)
 				.unlockedBy(getHasName(ModItems.ENDERIUM_SHARD.get()), has(ModItems.ENDERIUM_SHARD.get())).save(pRecipeOutput);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENDERIUM_ENCHANTER.get())
+				.pattern("$#$")
+				.pattern("#+#")
+				.pattern("$#$")
+				.define('$', ModBlocks.ENDERIUM_CLUMP_BLOCK.get())
+				.define('#', Blocks.OBSIDIAN)
+				.define('+', Items.NETHER_STAR)
+				.unlockedBy(getHasName(ModItems.ENDERIUM_SHARD.get()), has(ModItems.ENDERIUM_SHARD.get())).save(pRecipeOutput);
 	}
 
 

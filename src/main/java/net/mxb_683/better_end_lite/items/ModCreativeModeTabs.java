@@ -24,7 +24,7 @@ public class ModCreativeModeTabs {
 						output.accept(ModItems.ENDERIUM_SHOVEL.get());
 						output.accept(ModItems.ENDERIUM_AXE.get());
 						output.accept(ModItems.ENDERIUM_HOE.get());
-						
+
 						output.accept(ModItems.ENDERIUM_CLUMP.get());
 						output.accept(ModItems.ENDERIUM_SHARD.get());
 						output.accept(ModItems.ENDERIUM_BRICK.get());
@@ -52,6 +52,7 @@ public class ModCreativeModeTabs {
 						output.accept(ModBlocks.CHORUS_PRESSURE_PLATE.get());
 						output.accept(ModBlocks.CHORUS_TRAPDOOR.get());
 						output.accept(ModBlocks.CHORUS_DOOR.get());
+						output.accept(ModBlocks.ENDERIUM_ENCHANTER.get());
 					})
 					.build());
 

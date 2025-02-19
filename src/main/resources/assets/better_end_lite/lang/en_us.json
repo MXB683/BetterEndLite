@@ -9,6 +9,7 @@
 	"block.better_end_lite.enderium_ore": "Enderium Clump Ore",
 	"block.better_end_lite.enderium_clump_block": "Block of Enderium Clump",
 	"block.better_end_lite.enderium_spikes": "Enderium Spikes",
+	"block.better_end_lite.enderium_enchanter": "Enderium Enchanter",
 
 	"block.better_end_lite.enderium_bricks": "Enderium Bricks",
 	"block.better_end_lite.enderium_brick_stairs": "Enderium Brick Stairs",
@@ -38,5 +39,12 @@
 	"item.better_end_lite.enderium_pickaxe": "Enderium Pickaxe",
 	"item.better_end_lite.enderium_shovel": "Enderium Shovel",
 	"item.better_end_lite.enderium_axe": "Enderium Axe",
-	"item.better_end_lite.enderium_hoe": "Enderium Hoe"
+	"item.better_end_lite.enderium_hoe": "Enderium Hoe",
+
+	"effect.better_end_lite.bleeding": "Bleeding",
+	"effect.better_end_lite.ender_bleeding": "Bleeding",
+
+	"enchantment.better_end_lite.ender_blade": "Ender Blade",
+
+	"entity.minecraft.villager.better_end_lite.ender_cleric": "Ender Cleric"
 }

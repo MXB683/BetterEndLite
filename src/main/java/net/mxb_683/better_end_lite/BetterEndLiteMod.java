@@ -13,8 +13,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mxb_683.better_end_lite.block.ModBlocks;
+import net.mxb_683.better_end_lite.component.ModDataComponentTypes;
+import net.mxb_683.better_end_lite.effect.ModEffects;
+import net.mxb_683.better_end_lite.enchantment.ModEnchantmentEffects;
+import net.mxb_683.better_end_lite.event.ModEvents;
 import net.mxb_683.better_end_lite.items.ModCreativeModeTabs;
 import net.mxb_683.better_end_lite.items.ModItems;
+import net.mxb_683.better_end_lite.villager.ModVillagers;
 import org.slf4j.Logger;
 
 @Mod(BetterEndLiteMod.MOD_ID)
@@ -28,11 +33,16 @@ public class BetterEndLiteMod {
 		modEventBus.addListener(this::commonSetup);
 
 		MinecraftForge.EVENT_BUS.register(this);
+		MinecraftForge.EVENT_BUS.register(ModEvents.class);
 
 		ModCreativeModeTabs.register(modEventBus);
 
 		ModItems.register(modEventBus);
 		ModBlocks.register(modEventBus);
+		ModEffects.register(modEventBus);
+		ModEnchantmentEffects.register(modEventBus);
+		ModVillagers.register(modEventBus);
+		ModDataComponentTypes.register(modEventBus);
 
 		modEventBus.addListener(this::addCreative);
 

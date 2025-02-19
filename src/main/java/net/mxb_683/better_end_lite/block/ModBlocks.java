@@ -158,6 +158,11 @@ public class ModBlocks {
 				}
 			});
 
+	public static final RegistryObject<Block> ENDERIUM_ENCHANTER = registerBlock("enderium_enchanter",
+			() -> new Block(BlockBehaviour.Properties.of()
+					.strength(20F, 100F).requiresCorrectToolForDrops()
+					.sound(SoundType.SMALL_AMETHYST_BUD).noOcclusion().noTerrainParticles().lightLevel(state -> 7)));
+
 
 	private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
 		RegistryObject<T> toReturn = BLOCKS.register(name, block);

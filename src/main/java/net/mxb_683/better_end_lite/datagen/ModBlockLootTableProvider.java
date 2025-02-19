@@ -45,6 +45,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 		dropSelf(ModBlocks.CHORUS_BUTTON.get());
 		dropSelf(ModBlocks.CHORUS_PRESSURE_PLATE.get());
 		dropSelf(ModBlocks.CHORUS_TRAPDOOR.get());
+		dropSelf(ModBlocks.ENDERIUM_ENCHANTER.get());
 
 		this.add(ModBlocks.CHORUS_SLAB.get(),
 				block -> createSlabItemTable((ModBlocks.CHORUS_SLAB.get())));
